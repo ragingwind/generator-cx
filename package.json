@@ -1,0 +1,46 @@
+{
+  "name": "generator-ce",
+  "version": "0.0.0",
+  "description": "Scaffold out a chrome-extension",
+  "license": "MIT",
+  "repository": "ragingwind/generator-ce",
+  "author": {
+    "name": "Jimmy Moon",
+    "email": "ragingwind@gmail.com",
+    "url": "ragingwind.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "chrome",
+    "chrome-extension",
+    "boilerplate",
+    "template",
+    "scaffold"
+  ],
+  "dependencies": {
+    "underscore.string": "^3.2.3",
+    "yeoman-generator": "^0.22.5"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*",
+    "pify": "^2.2.0",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-test": "^1.0.0"
+  },
+  "xo": {
+    "esnext": true,
+    "ignores": [
+      "app/templates/**"
+    ]
+  }
+}

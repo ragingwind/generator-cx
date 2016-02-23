@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "description": "Chrome extension for the world",
+  "license": "MIT",
+  "repository": "<%= githubUsername %>/<%= ceName %>",
+  "author": {
+    "name": "<%= name %>",
+    "email": "<%= email %>"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
