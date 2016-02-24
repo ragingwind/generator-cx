@@ -21,10 +21,19 @@ module.exports = yeoman.Base.extend({
 				email: self.user.git.email()
 			};
 
+			const mv = (from, to) => {
+				self.fs.move(self.destinationPath(from), self.destinationPath(to));
+			};
+
 			self.fs.copyTpl([
 				`${self.templatePath()}/**`,
 				'!**/index.js'
 			], self.destinationPath(), tpl);
+
+			mv('editorconfig', '.editorconfig');
+			mv('gitattributes', '.gitattributes');
+			mv('gitignore', '.gitignore');
+			mv('_package.json', 'package.json');
 
 			cb();
 		});

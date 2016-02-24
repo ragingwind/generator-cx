@@ -18,5 +18,18 @@ test.serial('generates expected files', async () => {
 
 	await pify(generator.run.bind(generator))();
 
-	assert(true);
+	assert.file([
+		'.editorconfig',
+		'.git',
+		'.gitattributes',
+		'.gitignore',
+		'background.js',
+		'icon-16.png',
+		'icon-128.png',
+		'manifest.json',
+		'license',
+		'package.json',
+		'readme.md',
+		'test.js'
+	]);
 });
