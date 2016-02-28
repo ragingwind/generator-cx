@@ -12,7 +12,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava",
+    "build": "zip -r -j extensions.zip ./app"
   },
   "dependencies": {},
   "devDependencies": {}
