@@ -29,7 +29,6 @@ test.serial('generates expected files', async () => {
 		'manifest.json',
 		'license',
 		'package.json',
-		'readme.md',
-		'test.js'
+		'readme.md'
 	]);
 });
