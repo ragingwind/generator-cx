@@ -13,7 +13,8 @@ test.beforeEach(async () => {
 
 test.serial('generates expected files', async () => {
 	helpers.mockPrompt(generator, {
-		name: 'test'
+		ceName: 'test',
+		githubUsername: 'tester'
 	});
 
 	await pify(generator.run.bind(generator))();
@@ -31,4 +32,15 @@ test.serial('generates expected files', async () => {
 		'package.json',
 		'readme.md'
 	]);
+});
+
+test.serial('check content', async () => {
+	helpers.mockPrompt(generator, {
+		ceName: 'test',
+		githubUsername: 'tester'
+	});
+
+	await pify(generator.run.bind(generator))();
+
+	assert.fileContent('package.json', /\/test/);
 });
