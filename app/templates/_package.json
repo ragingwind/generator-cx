@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "0.0.0",
-  "description": "Chrome extension for the world",
+  "description": "My bring bring Chrome extension for the world",
   "license": "MIT",
   "repository": "<%= githubUsername %>/<%= ceName %>",
   "author": {
@@ -12,7 +12,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "zip -r -j extensions.zip ./app"
+    "build": "zip -r -j ext-$npm_package_version.zip  ./app"
   },
   "dependencies": {},
   "devDependencies": {}
