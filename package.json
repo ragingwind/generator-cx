@@ -1,6 +1,6 @@
 {
   "name": "generator-ce",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scaffold out a chrome-extension",
   "license": "MIT",
   "repository": "ragingwind/generator-ce",
