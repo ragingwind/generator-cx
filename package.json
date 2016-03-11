@@ -1,9 +1,9 @@
 {
-  "name": "generator-ce",
+  "name": "generator-cx",
   "version": "0.0.2",
   "description": "Scaffold out a chrome-extension",
   "license": "MIT",
-  "repository": "ragingwind/generator-ce",
+  "repository": "ragingwind/generator-cx",
   "author": {
     "name": "Jimmy Moon",
     "email": "ragingwind@gmail.com",
