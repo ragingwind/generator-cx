@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "zip": "zip -r -j $npm_package_name-$npm_package_version.zip . -x .git .*"
+    "build": "mkdir -p dist && zip -r -j dist/$npm_package_name-$npm_package_version.zip . -x .git .*"
   },
   "dependencies": {},
   "devDependencies": {}
