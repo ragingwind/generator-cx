@@ -10,8 +10,16 @@ $ npm install --global generator-cx
 
 ## Using
 
+### Scaffolding
+
 ```
 $ yo cx
+```
+
+### Zip up
+
+```
+$ npm run zip
 ```
 
 ## License

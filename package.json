@@ -12,9 +12,6 @@
   "engines": {
     "node": ">=4"
   },
-  "scripts": {
-    "test": "xo && ava"
-  },
   "files": [
     "app"
   ],
