@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "My bring bring Chrome extension for the world",
   "license": "MIT",
+  "name": "<%= ceName %>",
   "repository": "<%= githubUsername %>/<%= ceName %>",
   "author": {
     "name": "<%= name %>",
@@ -12,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "zip -r -j ext-$npm_package_version.zip  ./app"
+    "build": "zip -r -j $npm_package_name-$npm_package_version.zip . -x .git .*"
   },
   "dependencies": {},
   "devDependencies": {}

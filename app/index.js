@@ -1,6 +1,8 @@
 'use strict';
 const yeoman = require('yeoman-generator');
 const _s = require('underscore.string');
+const normalizeUrl = require('normalize-url');
+const humanizeUrl = require('humanize-url');
 
 module.exports = yeoman.Base.extend({
 	init() {
@@ -12,13 +14,25 @@ module.exports = yeoman.Base.extend({
 			message: 'Chrome extension name',
 			default: this.appname.replace(/\s/g, '-'),
 			filter: x => _s.slugify(x)
+		}, {
+			name: 'githubUsername',
+			message: 'What is your GitHub username?',
+			store: true,
+			validate: x => x.length > 0 ? true : 'You have to provide a username'
+		}, {
+			name: 'website',
+			message: 'What is the URL of your website?',
+			store: true,
+			validate: x => x.length > 0 ? true : 'You have to provide a website URL',
+			filter: x => normalizeUrl(x)
 		}], props => {
 			const tpl = {
 				ceName: props.ceName,
 				camelCeName: _s.camelize(props.ceName),
 				githubUsername: props.githubUsername,
 				name: self.user.git.name(),
-				email: self.user.git.email()
+				email: self.user.git.email(),
+				humanizedWebsite: humanizeUrl(props.website)
 			};
 
 			const mv = (from, to) => {
