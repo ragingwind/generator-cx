@@ -8,7 +8,7 @@ let generator;
 
 test.beforeEach(async () => {
 	await pify(helpers.testDirectory)(path.join(__dirname, 'temp'));
-	generator = helpers.createGenerator('ce:app', ['../app'], null, {skipInstall: true});
+	generator = helpers.createGenerator('cx:app', ['../app'], null, {skipInstall: true});
 });
 
 test.serial('generates expected files', async () => {
