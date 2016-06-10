@@ -1,7 +1,7 @@
 {
   "name": "generator-cx",
   "version": "0.0.5",
-  "description": "Scaffold out a chrome-extension",
+  "description": "Scaffold out a chrome-extension project",
   "license": "MIT",
   "repository": "ragingwind/generator-cx",
   "author": {
