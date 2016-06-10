@@ -1,4 +1,3 @@
-'use strict';
 const yeoman = require('yeoman-generator');
 const _s = require('underscore.string');
 const normalizeUrl = require('normalize-url');
